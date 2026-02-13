@@ -2,7 +2,7 @@ import { Component, For } from 'solid-js';
 import { Layout } from '../components/Layout/Layout';
 import { Card } from '../components/ui/Card';
 import { Button } from '../components/ui/Button';
-import { Plus, Database, Trash2 } from 'lucide-solid';
+import { Database, Plus, Trash2 } from 'lucide-solid';
 import { useNavigate } from '@solidjs/router';
 import { connectionStore, removeConnection } from '../store/connectionStore';
 

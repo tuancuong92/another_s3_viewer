@@ -1,5 +1,5 @@
-import { Component, Show, createSignal, onMount } from 'solid-js';
-import { Info, Calendar, Server, Database, Trash2, Globe, Lock, Loader2 } from 'lucide-solid';
+import { Component, createSignal, onMount, Show } from 'solid-js';
+import { Calendar, Database, Globe, Info, Loader2, Lock, Server, Trash2 } from 'lucide-solid';
 import { Button } from '../ui/Button';
 import { cn } from '../ui/Button';
 import { isBucketPublic, setBucketPublic } from '../../services/s3';

@@ -12,11 +12,9 @@ export const Input: Component<InputProps> = (props) => {
 
   return (
     <div class="flex flex-col gap-1.5">
-      {local.label && (
-        <label for={id} class="text-sm font-medium text-secondary">
+      <Show when={local.label}><label for={id} class="text-sm font-medium text-secondary">
           {local.label}
-        </label>
-      )}
+        </label></Show>
       <input
         id={id}
         class={cn(
@@ -26,7 +24,7 @@ export const Input: Component<InputProps> = (props) => {
         )}
         {...others}
       />
-      {local.error && <span class="text-xs text-red-500">{local.error}</span>}
+      <Show when={local.error}><span class="text-xs text-red-500">{local.error}</span></Show>
     </div>
   );
 };

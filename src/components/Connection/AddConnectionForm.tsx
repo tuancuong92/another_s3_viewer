@@ -1,4 +1,4 @@
-import { Component, createSignal, createMemo, Show } from 'solid-js';
+import { Component, createMemo, createSignal, Show } from 'solid-js';
 import { Button } from '../ui/Button';
 import { Input } from '../ui/Input';
 import { addConnection } from '../../store/connectionStore';

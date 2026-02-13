@@ -1,4 +1,4 @@
-import { S3Client, ListBucketsCommand, CreateBucketCommand, DeleteBucketCommand, GetBucketPolicyCommand, PutBucketPolicyCommand } from '@aws-sdk/client-s3';
+import { CreateBucketCommand, DeleteBucketCommand, GetBucketPolicyCommand, ListBucketsCommand, PutBucketPolicyCommand, S3Client } from '@aws-sdk/client-s3';
 import { S3Connection } from '../store/connectionStore';
 
 const clients: Record<string, S3Client> = {};

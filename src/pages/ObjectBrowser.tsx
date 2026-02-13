@@ -1,14 +1,14 @@
-import { Component, createResource, createSignal, For, Show, createEffect } from 'solid-js';
-import { useParams, A } from '@solidjs/router';
+import { Component, createEffect, createResource, createSignal, For, Show } from 'solid-js';
+import { A, useParams } from '@solidjs/router';
 import { connectionStore, setActiveConnection } from '../store/connectionStore';
-import { openPanel, uiStore, closePanel } from '../store/uiStore';
-import { listObjects, uploadObject, deleteObject, getObjectUrl, deleteObjects, moveObject, getPublicObjects } from '../services/s3_objects';
+import { closePanel, openPanel, uiStore } from '../store/uiStore';
+import { deleteObject, deleteObjects, getObjectUrl, getPublicObjects, listObjects, moveObject, uploadObject } from '../services/s3_objects';
 import { isBucketPublic } from '../services/s3';
 import { Layout } from '../components/Layout/Layout';
 import { Button } from '../components/ui/Button';
 import { Card } from '../components/ui/Card';
 import { Input } from '../components/ui/Input';
-import { Folder, File, Upload, Trash2, Download, ChevronRight, ChevronUp, ChevronDown, X, CheckCircle2, Loader2, FolderPlus, Move, GripVertical, ArrowUp, Eye, Info, Copy, Check, ChevronsLeft, ChevronsRight, Lock, Unlock } from 'lucide-solid';
+import { ArrowUp, Check, CheckCircle2, ChevronDown, ChevronRight, ChevronsLeft, ChevronsRight, ChevronUp, Copy, Download, Eye, File, Folder, FolderPlus, GripVertical, Info, Loader2, Lock, Move, Trash2, Unlock, Upload, X } from 'lucide-solid';
 import { FilePreviewDialog } from '../components/FilePreviewDialog';
 import { getFileIcon, getFileType } from '../utils/fileTypeUtils';
 
@@ -1098,7 +1098,7 @@ const ObjectBrowser: Component = () => {
                           <td class="px-6 py-4 text-secondary text-sm">Folder</td>
                           <td class="px-6 py-4 text-secondary text-sm">-</td>
                           <td class="px-6 py-4 text-secondary text-sm">-</td>
-                          <td class="px-6 py-4"></td>
+                          <td class="px-6 py-4" />
                         </tr>
                       );
                     } else {

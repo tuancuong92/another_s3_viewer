@@ -1,6 +1,6 @@
 import { createStore } from 'solid-js/store';
 import { createSignal } from 'solid-js';
-import { encrypt, decrypt } from '../utils/crypto';
+import { decrypt, encrypt } from '../utils/crypto';
 import { removeClient } from '../services/s3';
 
 export interface S3Connection {

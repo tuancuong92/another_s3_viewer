@@ -1,13 +1,13 @@
-import { Component, createResource, For, Show, createSignal, createEffect } from 'solid-js';
-import { useParams, A } from '@solidjs/router';
+import { Component, createEffect, createResource, createSignal, For, Show } from 'solid-js';
+import { A, useParams } from '@solidjs/router';
 import { connectionStore, setActiveConnection } from '../store/connectionStore';
-import { listBuckets, createBucket, deleteBucket } from '../services/s3';
+import { createBucket, deleteBucket, listBuckets } from '../services/s3';
 import { openPanel } from '../store/uiStore';
 import { Layout } from '../components/Layout/Layout';
 import { Card } from '../components/ui/Card';
 import { Button } from '../components/ui/Button';
 import { Input } from '../components/ui/Input';
-import { HardDrive, Plus, Trash2, Folder, Info } from 'lucide-solid';
+import { Folder, HardDrive, Info, Plus, Trash2 } from 'lucide-solid';
 
 const BucketsPage: Component = () => {
     const params = useParams();

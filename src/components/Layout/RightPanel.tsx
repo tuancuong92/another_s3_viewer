@@ -1,6 +1,6 @@
 import { Component, Show } from 'solid-js';
 import { X } from 'lucide-solid';
-import { uiStore, closePanel } from '../../store/uiStore';
+import { closePanel, uiStore } from '../../store/uiStore';
 import { BucketDetailsPanel } from './BucketDetailsPanel';
 import { ObjectDetailsPanel } from './ObjectDetailsPanel';
 import { cn } from '../ui/Button';

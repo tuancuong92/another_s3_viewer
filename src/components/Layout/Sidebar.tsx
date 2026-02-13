@@ -1,6 +1,6 @@
 import { Component, Show } from 'solid-js';
 import { A, useLocation } from '@solidjs/router';
-import { LayoutDashboard, Database, HardDrive, Settings } from 'lucide-solid';
+import { Database, HardDrive, LayoutDashboard, Settings } from 'lucide-solid';
 import { cn } from '../ui/Button';
 import { connectionStore } from '../../store/connectionStore';
 
