@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #171717;
+  --color-secondary: #404040;
+  --color-cta: #D4AF37;
+  --color-background: #FFFFFF;
+  --color-text: #171717;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: 'Inter', sans-serif;
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[var(--color-cta)] text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 ease-out hover:opacity-90 hover:-translate-y-[1px] cursor-pointer;
+  }
+
+  .btn-secondary {
+    @apply bg-transparent text-[var(--color-primary)] border-2 border-[var(--color-primary)] px-6 py-3 rounded-lg font-semibold transition-all duration-200 ease-out hover:bg-gray-50 cursor-pointer;
+  }
+
+  .card {
+    @apply bg-white rounded-xl p-6 shadow-md transition-all duration-200 ease-out cursor-pointer hover:shadow-lg hover:-translate-y-0.5;
+  }
+
+  .input {
+    @apply px-4 py-3 border border-slate-200 rounded-lg text-base transition-colors duration-200 focus:border-[var(--color-primary)] focus:outline-none focus:ring-4 focus:ring-gray-900/10;
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "name": "s3-storage-manager",
+  "version": "0.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "lint": "eslint src/ --ext .ts,.tsx",
+    "lint:fix": "eslint src/ --ext .ts,.tsx --fix",
+    "format": "prettier --write src/",
+    "format:check": "prettier --check src/",
+    "type-check": "tsc --noEmit"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^9.0.0",
+    "eslint-plugin-solid": "^0.14.0",
+    "postcss": "^8.4.38",
+    "prettier": "^3.3.0",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11",
+    "vite-plugin-solid": "^2.10.2"
+  },
+  "dependencies": {
+    "@aws-crypto/sha256-js": "^5.2.0",
+    "@aws-sdk/client-iam": "^3.988.0",
+    "@aws-sdk/client-s3": "^3.705.0",
+    "@aws-sdk/protocol-http": "^3.370.0",
+    "@aws-sdk/s3-request-presigner": "^3.705.0",
+    "@aws-sdk/signature-v4": "^3.370.0",
+    "@aws-sdk/util-format-url": "^3.972.3",
+    "@solidjs/router": "^0.15.3",
+    "clsx": "^2.1.1",
+    "lucide-solid": "^0.468.0",
+    "solid-js": "^1.8.17",
+    "tailwind-merge": "^2.3.0"
+  }
+}
